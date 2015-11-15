@@ -1,5 +1,5 @@
-const char leftFwd=0;
-const char leftRev=1;
+const char leftFwd=4;
+const char leftRev=5;
 const char rightFwd=2;
 const char rightRev=3;
 
@@ -46,9 +46,9 @@ void drive(char pinFwd, char pinRev, short wheelDir)
   }
 }
 
-double convertAnalogRead(int pin)
+void dispAnalogRead(int pin)
 {
-  return analogRead(pin)*5.0/1023;
+  Serial.println(analogRead(pin)*5.0/1023);
 }
 
 
