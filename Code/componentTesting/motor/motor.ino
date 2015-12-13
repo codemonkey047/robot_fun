@@ -8,8 +8,13 @@ void setup() {
   
   pinMode(leftFwd,OUTPUT);
   pinMode(leftRev,OUTPUT);
-    digitalWrite(leftFwd,HIGH);
-    digitalWrite(leftRev,LOW);  
+  digitalWrite(leftFwd,HIGH);
+  digitalWrite(leftRev,LOW);  
+  
+  pinMode(rightFwd,OUTPUT);
+  pinMode(rightRev,OUTPUT);
+  digitalWrite(rightFwd,HIGH);
+  digitalWrite(rightRev,LOW);
 }
 
 void loop() {
