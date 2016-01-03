@@ -20,13 +20,21 @@ void setup() {
 void loop() {
   Serial.println("Forward");
   drive(1,0);
-  delay(2000);
+  delay(5000);
   
   Serial.println("Reverse");
   drive(-1,0);
-  delay(2000);
-}
+  delay(5000);
 
+  Serial.println("Right Turn");
+  drive(0,1);
+  delay(5000);
+
+  Serial.println("Left Turn");
+  drive(0,-1);
+  delay(5000);
+  
+}
 
 void drive(short dir, short turn)
 {
