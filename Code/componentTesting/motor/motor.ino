@@ -1,5 +1,5 @@
-const char leftFwd=4;
-const char leftRev=5;
+const char leftFwd=5;
+const char leftRev=4;
 const char rightFwd=2;
 const char rightRev=3;
 
